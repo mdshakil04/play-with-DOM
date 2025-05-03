@@ -3,7 +3,7 @@ const title = document.getElementById("title")
 title.innerText = "Shakil is my Boss";
 title.style.color = "blue"
 console.log(title.innerText)
-const liContainer = document.getElementsByClassName("li-items");
+// const liContainer = document.getElementsByClassName("li-items");
 const liItems = document.getElementsByClassName("li-items")
 // console.log(liItems)
 for(const li of liItems){
@@ -17,5 +17,11 @@ for (const p of pTag){
     // p.style.color = ('red')
 }
 const newLi = document.querySelector('.lists li');
-newLi.innerText = "Prothom"
+newLi.innerText = "Prothom";
+newLi.style.color = 'red'
 // console.log(newLi)
+
+const liContainer = document.getElementById('li-container')
+// const newHead = document.createElement = 'h1';
+// liContainer.appendChild(newHead)
+console.log(liContainer)
