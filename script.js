@@ -8,10 +8,14 @@ const liItems = document.getElementsByClassName("li-items")
 // console.log(liItems)
 for(const li of liItems){
     // console.log(li)
-    li.innerText = "Boss"
+    // li.innerText = "Boss"
 }
 const pTag = document.getElementsByTagName('p')
 for (const p of pTag){
     // console.log(p.innerText)
-    p.innerText = "How are you ?"
+    // p.innerText = "How are you ?"
+    // p.style.color = ('red')
 }
+const newLi = document.querySelector('.lists li');
+newLi.innerText = "Prothom"
+// console.log(newLi)
