@@ -1,8 +1,8 @@
-console.log("I am from dom")
+// console.log("I am from dom")
 const title = document.getElementById("title")
 title.innerText = "Shakil is my Boss";
 title.style.color = "blue"
-console.log(title.innerText)
+// console.log(title.innerText)
 // const liContainer = document.getElementsByClassName("li-items");
 const liItems = document.getElementsByClassName("li-items")
 // console.log(liItems)
@@ -24,4 +24,4 @@ newLi.style.color = 'red'
 const liContainer = document.getElementById('li-container')
 // const newHead = document.createElement = 'h1';
 // liContainer.appendChild(newHead)
-console.log(liContainer)
+// console.log(liContainer)
