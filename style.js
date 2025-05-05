@@ -12,3 +12,7 @@ for(const section of sections){
 const doc = document.getElementById('description-container')
 doc.classList.add('font-size');
 // doc.style.backgroundColor = 'skyblue';
+const textContainer = document.getElementById('text-container')
+const newHeading = document.createElement('h2');
+newHeading.innerText = 'Hi! I am created from Dom';
+textContainer.appendChild(newHeading)
