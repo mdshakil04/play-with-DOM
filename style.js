@@ -7,7 +7,7 @@ for(const section of sections){
     section.style.marginBottom = '5px'
     section.style.borderRadius = '20px'
     section.style.padding = '10px'
-    section.style.textAlign = 'center'
+    // section.style.textAlign = 'center'
 }
 const doc = document.getElementById('description-container')
 doc.classList.add('font-size');
