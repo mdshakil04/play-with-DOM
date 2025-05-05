@@ -10,4 +10,5 @@ for(const section of sections){
     section.style.textAlign = 'center'
 }
 const doc = document.getElementById('description-container')
-doc.style.backgroundColor = 'skyblue';
+doc.classList.add('font-size');
+// doc.style.backgroundColor = 'skyblue';
