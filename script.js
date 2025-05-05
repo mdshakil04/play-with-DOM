@@ -20,8 +20,8 @@ const newLi = document.querySelector('.lists li');
 newLi.innerText = "Prothom";
 newLi.style.color = 'red'
 // console.log(newLi)
-
 const liContainer = document.getElementById('li-container')
 // const newHead = document.createElement = 'h1';
-// liContainer.appendChild(newHead)
+// liContainer.appendChild(newHead)B
 // console.log(liContainer)
+// ---------------------------------------------------------------------------------------------------
