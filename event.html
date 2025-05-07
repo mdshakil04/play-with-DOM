@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event listener</title>
 </head>
+
 <body>
     <h1>Play With Event Listener</h1>
+    <div id="comments-container" style="border:2px solid green " >
+        <h3>Comments will appear here</h3>
+    </div>
     <h2 id="default-text">Try to change me??</h2>
     <input id="input-field" type="text">
-    <button id="update-btn">Update Text</button>
+    <button id="update-btn">Update Text</button><br><br>
+
+    <textarea name="" id="comment-box"></textarea><br>
+    <button id="comment-btn">Comment</button>
+    <script>
+        document.getElementById('comment-btn').addEventListener('click', function(){
+            // console.log('btn clicked')
+            const commentsContainer = document.getElementById('comments-container');
+            const commentsBox = document.getElementById('comment-box');
+            const comments = commentsBox.value;
+            // console.log(comments)
+            const commentsText = document.createElement('li');
+            commentsText.innerText = comments;
+            commentsContainer.appendChild(commentsText);
+            commentsBox.value = '';
+        })
+    </script>
     <script src="/event.js"></script>
 </body>
 </html>
