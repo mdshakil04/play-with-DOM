@@ -14,19 +14,38 @@
     <h2 id="default-text">Try to change me??</h2>
     <input id="input-field" type="text" />
     <button id="update-btn">Update Text</button><br /><br />
-
+    <!-- --------------------------------------------------------- -->
     <textarea name="" id="comment-box"></textarea><br />
-    <button id="comment-btn">Comment</button><br><br>
+    <button id="comment-btn">Comment</button><br /><br />
+    <!-- ------------------------------------------------ -->
     <section style="border: 2px solid green">
       <h2 id="target-text">This text will be deleted</h2>
-      <input id="input-field" type="text"><br><br>
-      <button id="btn-delete">delete</button>
 
+      <input placeholder="Please! type 'delete'" id="input-field2" type="text" /><br /><br />
+
+      <button id="btn-delete" disabled>delete</button>
     </section>
+    <!-- -----------------------------Script----------------- -->
     <script>
-      document.getElementById('btn-delete').addEventListener('click', function(){
-        console.log('btn triggerd')
-      })
+      document
+        .getElementById("input-field2")
+        .addEventListener("keyup", function (event) {
+          const text = event.target.value;
+          const btnDelete = document.getElementById('btn-delete');
+          // console.log(text)
+          if(text === 'delete'){
+            btnDelete.removeAttribute('disabled')
+          }else{
+            btnDelete.setAttribute('disabled', true)
+          }
+        });
+      document
+        .getElementById("btn-delete")
+        .addEventListener("click", function () {
+          const targetText = document.getElementById('target-text');
+          targetText.style.display = 'none';
+          
+        });
     </script>
     <script src="/event.js"></script>
   </body>
