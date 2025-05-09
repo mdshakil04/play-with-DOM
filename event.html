@@ -23,30 +23,31 @@
 
       <input placeholder="Please! type 'delete'" id="input-field2" type="text" /><br /><br />
 
-      <button id="btn-delete" disabled>delete</button>
+      <button id="btn-delete" disabled >delete</button>
     </section>
     <!-- -----------------------------Script----------------- -->
     <script>
-      document
-        .getElementById("input-field2")
-        .addEventListener("keyup", function (event) {
-          const text = event.target.value;
-          const btnDelete = document.getElementById('btn-delete');
-          // console.log(text)
-          if(text === 'delete'){
-            btnDelete.removeAttribute('disabled')
-          }else{
-            btnDelete.setAttribute('disabled', true)
-          }
-        });
-      document
-        .getElementById("btn-delete")
-        .addEventListener("click", function () {
-          const targetText = document.getElementById('target-text');
-          targetText.style.display = 'none';
+      // document
+      //   .getElementById("input-field2")
+      //   .addEventListener("keyup", function (event) {
+      //     const text = event.target.value;
+      //     const btnDelete = document.getElementById('btn-delete');
+      //     // console.log(text)
+      //     if(text === 'delete'){
+      //       btnDelete.removeAttribute('disabled')
+      //     }else{
+      //       btnDelete.setAttribute('disabled', true)
+      //     }
+      //   });
+      // document
+      //   .getElementById("btn-delete")
+      //   .addEventListener("click", function () {
+      //     const targetText = document.getElementById('target-text');
+      //     targetText.style.display = 'none';
           
-        });
+      //   });
     </script>
     <script src="/event.js"></script>
+    <script src="/delete-btn.js"></script>
   </body>
 </html>
